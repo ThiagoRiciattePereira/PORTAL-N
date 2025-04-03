@@ -1,7 +1,6 @@
 .nav-primary{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 20px 32px;
 
@@ -10,15 +9,14 @@
         font-size: 24px;
         line-height: 24px;
         color: var(--brand-color-light);
-        text-transform: uppercase;
-        
     }
 
-    div{
+    .div-list{
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 8px;
+
+        justify-self: start;
 
         span{
             font-size: 16px;
@@ -27,4 +25,17 @@
         }
     }
 
+    .div-search{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        justify-self: end;
+
+        span{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+        }
+    }
 }

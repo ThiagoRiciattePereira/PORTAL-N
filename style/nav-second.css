@@ -1,17 +1,21 @@
 .nav-secondary{
     display: flex;
     justify-content: space-between;
-    align-content: center;
     align-items: center;
     padding: 14px 32px;
+    border-block: solid #1E293B 1px;
 
     a{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 145%;
         text-decoration: none;
         color: var(--text-color-secondary);
-    
+
     }
 
     a:hover{
+        transition-duration: 500ms;
         color: var(--brand-color-light);
     }
 }

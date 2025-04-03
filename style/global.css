@@ -29,3 +29,9 @@
 span{
     color: var(--text-color-primary);
 }
+
+.titlemd{
+    color: var(--brand-color-light);
+    font-weight: 900;
+    font-size: 30px;
+}

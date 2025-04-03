@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* Cor de Produto */
+    --brand-color-light:#60A5FA;
+    --brand-color-dark:#1D4ED8;
+    /* Cor de Base */
+    --bg-color:#0F172A;
+    --stroke-color:#1E293B;
+    /* Cor de Texto */
+    --text-color-primary:#f1f5ff;
+    --text-color-secondary:#CBD5E1;
+
+    background-color: var(--bg-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Archivo, sans-serif;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+span{
+    color: var(--text-color-primary);
+}

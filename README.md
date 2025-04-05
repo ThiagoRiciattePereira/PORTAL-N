@@ -1,6 +1,5 @@
-<h1 class="titlemd">
+<h1>
 TECH NEWS
 </h1>
 
----
 - Aqui mostramos o que acontece na atualidade

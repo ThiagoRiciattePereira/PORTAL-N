@@ -1,0 +1,144 @@
+main {
+    margin: 2.5rem 2rem 5rem 2rem;
+}
+
+.highlight {
+    width: 1216px;
+    height: 416px;
+    display: grid;
+    grid-template-areas:
+        "A A B C"
+        "A A D E";
+    grid-template-columns: 296px 296px 288px 288px;
+    grid-template-rows: 200px 200px;
+    gap: 1rem;
+
+    /*--------------------- First Image(Robot) --------------------- */
+    .-robot1 {
+        grid-area: A;
+        position: relative;
+
+        img[alt="Robot1"] {
+            width: 608px;
+            height: 416px;
+            border-radius: var(--border-r);
+        }
+
+        .robot-image {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            padding: 72px 24px 24px;
+            gap: 8px;
+            bottom: 0px;
+
+            p:nth-child(2) {
+                font-weight: 800;
+                font-size: 24px;
+                color: var(--text-color-primary);
+                line-height: 135%;
+
+            }
+
+        }
+    }
+
+    /*--------------------- Final(Robot) --------------------- */
+
+    .another-images {
+        
+        /*--------------------- Second Image(Cell1) --------------------- */
+        .cell1-image {
+            grid-area: B;
+            grid-column: 3/4;
+            grid-row: 1/2;
+            position: relative;
+
+            img[alt="Cell1"] {
+                width: 288px;
+                height: 200px;
+                border-radius: var(--border-r);
+            }
+
+            .content-cell1 {
+                position: absolute;
+
+                p:nth-child(2) {
+                    font-weight: 800;
+                    font-size: 24px;
+                    color: var(--text-color-primary);
+                    line-height: 135%;
+
+                }
+            }
+        }
+
+        /*--------------------- Final(Cell1) --------------------- */
+
+
+        /*--------------------- Third Image(Cell2) ---------------------*/
+        .cell2-image {
+            grid-area: C;
+            grid-column: 4/5;
+            grid-row: 1/2;
+            position: relative;
+
+            img[alt="Cell2"] {
+                width: 288px;
+                height: 200px;
+                border-radius: var(--border-r);
+            }
+
+            .content-cell2 {
+                position: absolute;
+            }
+        }
+
+        /*--------------------- Final(Cell2) ---------------------*/
+
+
+        /*--------------------- Quarter Image(Health1) ---------------------*/
+        .health1-image {
+            grid-area: D;
+            position: relative;
+            width: 288px;
+            height: 200px;
+
+            img[alt="Health1"] {
+                width: 288px;
+                height: 200px;
+                border-radius: var(--border-r);
+            }
+
+            .content-health1 {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        /*--------------------- Final(Health1) ---------------------*/
+
+
+        /*--------------------- Fifth Image(VR1) ---------------------*/
+        .VR1-image {
+            grid-area: E;
+            position: relative;
+            width: 288px;
+            height: 200px;
+
+            img[alt="VR1"] {
+                width: 288px;
+                height: 200px;
+                border-radius: var(--border-r);
+            }
+
+            .content-VR1 {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        /*--------------------- Final(VR1) ---------------------*/
+    }
+
+}

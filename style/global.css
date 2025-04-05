@@ -10,6 +10,8 @@
     /* Cor de Texto */
     --text-color-primary:#f1f5ff;
     --text-color-secondary:#CBD5E1;
+    /* Borda de Img... */
+    --border-r: 4px;
 
     background-color: var(--bg-color);
 }
@@ -23,15 +25,11 @@
 
 .container{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 span{
     color: var(--text-color-primary);
-}
-
-.titlemd{
-    color: var(--brand-color-light);
-    font-weight: 900;
-    font-size: 30px;
 }

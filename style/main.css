@@ -1,16 +1,16 @@
 main {
+    display: flex;
+    flex-direction: column;
     margin: 2.5rem 2rem 5rem 2rem;
+    gap: 80px;
 }
 
 .highlight {
-    width: 1216px;
-    height: 416px;
     display: grid;
     grid-template-areas:
-        "A A B C"
-        "A A D E";
-    grid-template-columns: 296px 296px 288px 288px;
-    grid-template-rows: 200px 200px;
+        "A B";
+    grid-template-columns: 608px;
+    grid-template-rows: 419.5px;
     gap: 1rem;
 
     /*--------------------- First Image(Robot) --------------------- */
@@ -20,7 +20,7 @@ main {
 
         img[alt="Robot1"] {
             width: 608px;
-            height: 416px;
+            height: 419.5px;
             border-radius: var(--border-r);
         }
 
@@ -40,18 +40,24 @@ main {
 
             }
 
+            .button-{
+                width: 72px;
+            }
         }
     }
 
     /*--------------------- Final(Robot) --------------------- */
 
     .another-images {
-        
+        display: grid;
+        grid-template-areas:
+         "B C"
+         "D E";
+        gap: 1rem;
+
         /*--------------------- Second Image(Cell1) --------------------- */
         .cell1-image {
             grid-area: B;
-            grid-column: 3/4;
-            grid-row: 1/2;
             position: relative;
 
             img[alt="Cell1"] {
@@ -62,14 +68,28 @@ main {
 
             .content-cell1 {
                 position: absolute;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 36px 12px 12px;
+                gap: 8px;
 
                 p:nth-child(2) {
+                    width: 264px;
+                    height: 60px;
                     font-weight: 800;
-                    font-size: 24px;
+                    font-size: 14px;
                     color: var(--text-color-primary);
-                    line-height: 135%;
+                    line-height: 140%;
+                    overflow-y: hidden;
+
 
                 }
+
+                .button-{
+                    width: 93px;
+                }
+    
             }
         }
 
@@ -79,8 +99,6 @@ main {
         /*--------------------- Third Image(Cell2) ---------------------*/
         .cell2-image {
             grid-area: C;
-            grid-column: 4/5;
-            grid-row: 1/2;
             position: relative;
 
             img[alt="Cell2"] {
@@ -91,6 +109,27 @@ main {
 
             .content-cell2 {
                 position: absolute;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 36px 12px 12px;
+                gap: 8px;
+
+                p:nth-child(2) {
+                    width: 264px;
+                    height: 60px;
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: var(--text-color-primary);
+                    line-height: 140%;
+                    overflow-y: hidden;
+
+
+                }
+
+                .button-{
+                    width: 70px;
+                }
             }
         }
 
@@ -101,8 +140,6 @@ main {
         .health1-image {
             grid-area: D;
             position: relative;
-            width: 288px;
-            height: 200px;
 
             img[alt="Health1"] {
                 width: 288px;
@@ -113,6 +150,24 @@ main {
             .content-health1 {
                 position: absolute;
                 bottom: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 36px 12px 12px;
+                gap: 8px;
+
+                & p:nth-child(2) {
+                    width: 264px;
+                    height: 60px;
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: var(--text-color-primary);
+                    line-height: 140%;
+                    overflow: hidden;
+                }
+
+                .button-{
+                    width: 71px;
+                }
             }
         }
 
@@ -123,8 +178,6 @@ main {
         .VR1-image {
             grid-area: E;
             position: relative;
-            width: 288px;
-            height: 200px;
 
             img[alt="VR1"] {
                 width: 288px;
@@ -135,10 +188,174 @@ main {
             .content-VR1 {
                 position: absolute;
                 bottom: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 36px 12px 12px;
+                gap: 8px;   
+
+                p:nth-child(2){
+                    width: 264px;
+                    height: 60px;
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: var(--text-color-primary);
+                    line-height: 140%;
+                    overflow-y: hidden;
+
+                }
+
+                .button-{
+                    width: 124px;
+                }
             }
         }
 
         /*--------------------- Final(VR1) ---------------------*/
     }
 
+}
+
+.more-reads{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    gap: 24px;
+
+
+    .header-reads{
+        border-top: solid  #1E293B 1px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        p{
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text-color-secondary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding-top: 12px;
+
+            span{
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--text-color-secondary);
+            }
+        }
+    }   
+    
+    .high-reads{
+        display: grid;
+        grid-template-areas: "A B C D";
+        grid-template-columns: repeat(4, 292px);
+        gap:16px;
+
+        img{
+            width: 292px;
+            height: 160px;
+            border-radius: var(--border-r);
+        }
+
+        .content-car1{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .button-{
+                margin: 8px 8px;
+                position: absolute;
+                top: 0;
+                width: 70px;
+            }
+
+            p:nth-child(3){
+                color: var(--text-color-primary);
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 140%;
+                width: 292px;
+                height: 66px;
+                overflow-y: hidden;
+            }
+    
+        }
+
+        .content-folder{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .button-{
+                margin: 8px 8px;
+                position: absolute;
+                top: 0;
+                width: 93px;
+
+            }
+
+            p:nth-child(3){
+                color: var(--text-color-primary);
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 140%;
+                width: 292px;
+                height: 66px;
+                overflow-y: hidden;
+            }
+        }
+
+        .content-VR2{
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .button-{
+                margin: 8px 8px;
+                position: absolute;
+                top: 0;
+                width: 124px;
+            }
+
+            p:nth-child(3){
+                color: var(--text-color-primary);
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 140%;
+                width: 292px;
+                height: 66px;
+                overflow-y: hidden;
+            
+            }
+        }
+
+        .content-orbitate{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .button-{
+                margin: 8px 8px;
+                position: absolute;
+                top: 0;
+                width: 70px;
+                
+            }
+
+            p:nth-child(3){
+                color: var(--text-color-primary);
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 140%;
+                width: 292px;
+                height: 66px;
+                overflow-y: hidden;
+            }
+        }
+    }  
 }

@@ -5,6 +5,7 @@ main {
     gap: 80px;
 }
 
+/*  */
 .highlight {
     display: grid;
     grid-template-areas:
@@ -214,7 +215,9 @@ main {
     }
 
 }
+/*  */
 
+/*  */
 .more-reads{
     display: flex;
     flex-direction: column;
@@ -248,7 +251,6 @@ main {
     
     .high-reads{
         display: grid;
-        grid-template-areas: "A B C D";
         grid-template-columns: repeat(4, 292px);
         gap:16px;
 
@@ -359,3 +361,96 @@ main {
         }
     }  
 }
+/*  */
+
+/*  */
+.high-IA{
+    display: grid;
+    grid-template-columns: 696px 488px;
+    gap: 32px;
+
+    .content-IA{
+        border-top: solid #1E293B 1px;
+        display: grid;
+        grid-template-rows: 32px 800px;
+        gap: 24px;
+        padding-top: 12px;
+
+        .header-IA{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-color-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 145%;
+
+            p:nth-child(2){
+                display: flex;
+                justify-content: center;
+                gap: 4px;
+            }
+        }
+
+        .notices-IA{
+            display:grid;
+            grid-template-rows: repeat(4, 176px);
+            gap: 32px;
+
+            .style-IA{
+                display: grid;
+                grid-template-areas: 
+                "A C"
+                "B C"
+                "D C";
+                column-gap: 16px;
+
+
+                .button-{
+                    grid-area: A;
+                    width: 152px;
+                }
+
+                p:nth-child(2){
+                    grid-area: B;
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: var(--text-color-primary);
+                    height: 44px;
+                    overflow-y: hidden;
+                }
+
+                p:nth-child(3){
+                    grid-area: D;
+                    color: var(--text-color-secondary);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    height: 88px;
+                    overflow-y: hidden;
+                }
+
+                img{
+                    grid-area: C;
+                    width: 176px;
+                    height: 176px;
+                    border-radius: var(--border-r);
+                }
+            }
+        }
+    }
+
+    aside{
+
+        .ads-aside{
+
+            img{
+                width: 488px;
+                height: 280px;
+                border-radius: var(--border-r);
+            }
+        }
+    }
+}
+/*  */
